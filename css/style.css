@@ -61,14 +61,6 @@ header {
   z-index: 1100;
 }
 
-.hamburger svg {
-  transition: all 0.3s ease;
-}
-
-.hamburger.active svg {
-  transform: rotate(90deg);
-}
-
 /* Navigation */
 nav {
   position: fixed;
@@ -79,14 +71,10 @@ nav {
   background: var(--bg-secondary);
   border-right: 1px solid var(--border);
   padding-top: calc(var(--header-height) + 1rem);
-  transition: left 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 999;
   overflow-y: auto;
 }
 
-nav.open {
-  left: 0;
-}
 
 nav a {
   display: block;
@@ -95,13 +83,6 @@ nav a {
   text-decoration: none;
   font-weight: 500;
   transition: var(--transition);
-}
-
-nav a:hover,
-nav a.active {
-  background: var(--bg-tertiary);
-  color: var(--accent-light);
-  padding-left: 2.2rem;
 }
 
 /* Desktop */
@@ -115,21 +96,4 @@ nav a.active {
 main {
   padding: calc(var(--header-height) + 1.5rem) 1.5rem 3rem;
   min-height: calc(100vh - var(--header-height));
-}
-
-/* Overlay */
-.overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.65);
-  backdrop-filter: blur(6px);
-  z-index: 900;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease;
-}
-
-.overlay.open {
-  opacity: 1;
-  pointer-events: auto;
 }
