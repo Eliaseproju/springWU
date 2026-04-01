@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>Nirobet</title>
 </head>
+
 <body>
 
-  <header>
+  <header> 
+     <div class="hamburger-menu" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <h1 class="logo">Nirobet</h1>
-    
-    <button type="button" aria-label="Menu" class="hamburger" id="hamburger">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
-        <path d="M3 12h18 M3 6h18 M3 18h18" />
-      </svg>
-    </button>
+  
   </header>
+  
+  <div class="off-screen-menu" id="off-screen-menu">
+    <a href="#" class="active">Home</a>
+    <a href="#">Casino</a>
+    <a href="#">Sports</a>
+    <a href="#">Promotions</a>
+    <a href="#">Wallet</a>
+  </div>
 
   <!-- Overlay -->
   <div class="overlay" id="overlay"></div>
@@ -37,4 +47,5 @@
 
   <script src="js/hamburger.js"></script>
 </body>
+
 </html>

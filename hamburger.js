@@ -1,31 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.getElementById('hamburger');
-  const nav = document.getElementById('nav');
-  const overlay = document.getElementById('overlay');
+const HamburgerMenu = document.querySelector('.hamburger-menu');
 
-  if (!hamburger || !nav || !overlay) {
-    console.error('Elements not found! Check your IDs.');
-    return;
-  }
+const offScreenMenu = document.querySelector('.off-screen-menu');
 
-  function toggleMenu() {
-    nav.classList.toggle('open');
-    overlay.classList.toggle('open');
-    hamburger.classList.toggle('active');
-  }
-
-  hamburger.addEventListener('click', toggleMenu);
-  overlay.addEventListener('click', toggleMenu);
-
-  document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', () => {
-      if (window.innerWidth < 1024) toggleMenu();
-    });
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === "Escape" && nav.classList.contains('open')) {
-      toggleMenu();
-    }
-  });
-});
+HamburgerMenu.addEventListener('click', () => {
+    HamburgerMenu.classList.toggle('active');
+    offScreenMenu.classList.toggle('active');
+    
+})
