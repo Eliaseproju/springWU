@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nirobet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="/img/Nirobet-logo.png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="logo">Nirobet</div>
+    <div class="header-right">
+      <div class="balance-pill">
+        <span class="balance-icon">◈</span>
+        $1,240.50
+      </div>
+      <button class="btn-deposit">Deposit</button>
+    </div>
+  </header>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <div class="nav-section-label">Main</div>
+      <a href="index.html" class="nav-link active">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span class="nav-label">Home</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        <span class="nav-label">Casino</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        <span class="nav-label">Sports</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span class="nav-label">Originals</span>
+      </a>
+      <div class="nav-section-label">Account</div>
+      <a href="promotions.html" class="nav-link">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12V22H4V12"/><path d="M22 7H2v5h20V7z"/><path d="M12 22V7"/></svg>
+        <span class="nav-label">Promotions</span>
+      </a>
+      <a href="wallet.html" class="nav-link">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        <span class="nav-label">Wallet</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span class="nav-label">VIP Club</span>
+      </a>
+      <div class="sidebar-footer">
+        <div class="user-row">
+          <div class="user-avatar">EL</div>
+          <div class="user-info">
+            <div class="user-name">Elias</div>
+            <div class="user-level">Silver · Level 4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main class="main" id="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="hero-pill">
+          <span class="pulse-dot"></span>
+          Weekly Reload Active
+        </div>
+        <h1>Win Big.<br><span class="hero-accent">Play Smart.</span></h1>
+        <p>Get up to <strong>$5,000</strong> reload bonus every week. Thousands of games, live sports, and exclusive originals.</p>
+        <div class="hero-actions">
+          <button class="btn-primary-lg">Claim Bonus</button>
+          <button class="btn-ghost-lg">Browse Games</button>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-val">14.2K</div>
+          <div class="hero-stat-lbl">Online now</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-val">$2.4M</div>
+          <div class="hero-stat-lbl">Wagered today</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-val">3,800+</div>
+          <div class="hero-stat-lbl">Games</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent wins -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title"><span class="title-dot"></span>Recent Big Wins</h2>
+        <a href="#" class="see-all">See all →</a>
+      </div>
+      <div class="ticker-card">
+        <div class="ticker-body" id="ticker"></div>
+      </div>
+    </section>
+
+    <!-- Featured slots -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title"><span class="title-dot"></span>Featured Slots</h2>
+        <a href="#" class="see-all">See all →</a>
+      </div>
+      <div class="game-grid">
+        <div class="game-card">
+          <div class="game-thumb" style="background:#1a0d2e;">🎰</div>
+          <div class="game-rtp">96.4%</div>
+          <div class="game-overlay"><span class="play-label">PLAY</span></div>
+          <div class="game-info">
+            <div class="game-name">Gates of Olympus</div>
+            <div class="game-provider">Pragmatic Play</div>
+          </div>
+        </div>
+        <div class="game-card">
+          <div class="game-thumb" style="background:#0d1228;">🃏</div>
+          <div class="game-rtp">97.1%</div>
+          <div class="game-overlay"><span class="play-label">PLAY</span></div>
+          <div class="game-info">
+            <div class="game-name">Sweet Bonanza</div>
+            <div class="game-provider">Pragmatic Play</div>
+          </div>
+        </div>
+        <div class="game-card">
+          <div class="game-thumb" style="background:#1a0d0d;">🍀</div>
+          <div class="game-rtp">95.8%</div>
+          <div class="game-overlay"><span class="play-label">PLAY</span></div>
+          <div class="game-info">
+            <div class="game-name">Big Bass Bonanza</div>
+            <div class="game-provider">Reel Kingdom</div>
+          </div>
+        </div>
+        <div class="game-card">
+          <div class="game-thumb" style="background:#0d1a1a;">💎</div>
+          <div class="game-rtp">96.0%</div>
+          <div class="game-overlay"><span class="play-label">PLAY</span></div>
+          <div class="game-info">
+            <div class="game-name">Book of Dead</div>
+            <div class="game-provider">Play'n GO</div>
+          </div>
+        </div>
+        <div class="game-card">
+          <div class="game-thumb" style="background:#1a1a0d;">⚡</div>
+          <div class="game-rtp">96.7%</div>
+          <div class="game-overlay"><span class="play-label">PLAY</span></div>
+          <div class="game-info">
+            <div class="game-name">Reactoonz</div>
+            <div class="game-provider">Play'n GO</div>
+          </div>
+        </div>
+        <div class="game-card">
+          <div class="game-thumb" style="background:#1a0d1a;">🔮</div>
+          <div class="game-rtp">97.5%</div>
+          <div class="game-overlay"><span class="play-label">PLAY</span></div>
+          <div class="game-info">
+            <div class="game-name">Starburst XXXtreme</div>
+            <div class="game-provider">NetEnt</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sports -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title"><span class="title-dot"></span>Live &amp; Upcoming</h2>
+        <a href="#" class="see-all">Full schedule →</a>
+      </div>
+      <div class="sport-tabs" id="sport-tabs">
+        <button class="sport-tab active">⚽ Football</button>
+        <button class="sport-tab">🏀 Basketball</button>
+        <button class="sport-tab">🎮 Esports</button>
+        <button class="sport-tab">🎾 Tennis</button>
+        <button class="sport-tab">🏈 NFL</button>
+      </div>
+      <div class="matches">
+        <div class="match-card">
+          <div class="match-league">PL · Live</div>
+          <div class="match-teams">
+            <div class="team"><div class="team-badge">M</div><span>Man City</span></div>
+            <div class="team"><div class="team-badge">A</div><span>Arsenal</span></div>
+          </div>
+          <div class="match-score">
+            <div class="score">2 – 1</div>
+            <div class="score-min live-min">67'</div>
+          </div>
+          <div class="match-odds">
+            <button class="odd"><span class="odd-lbl">1</span><span class="odd-val">1.65</span></button>
+            <button class="odd"><span class="odd-lbl">X</span><span class="odd-val">3.80</span></button>
+            <button class="odd"><span class="odd-lbl">2</span><span class="odd-val">5.20</span></button>
+          </div>
+        </div>
+        <div class="match-card">
+          <div class="match-league">La Liga</div>
+          <div class="match-teams">
+            <div class="team"><div class="team-badge">R</div><span>Real Madrid</span></div>
+            <div class="team"><div class="team-badge">B</div><span>Barcelona</span></div>
+          </div>
+          <div class="match-time-pill">Tonight 20:45</div>
+          <div class="match-odds">
+            <button class="odd"><span class="odd-lbl">1</span><span class="odd-val">2.40</span></button>
+            <button class="odd"><span class="odd-lbl">X</span><span class="odd-val">3.10</span></button>
+            <button class="odd"><span class="odd-lbl">2</span><span class="odd-val">2.85</span></button>
+          </div>
+        </div>
+        <div class="match-card">
+          <div class="match-league">UCL</div>
+          <div class="match-teams">
+            <div class="team"><div class="team-badge">B</div><span>Bayern Munich</span></div>
+            <div class="team"><div class="team-badge">P</div><span>PSG</span></div>
+          </div>
+          <div class="match-time-pill">Tmrw 21:00</div>
+          <div class="match-odds">
+            <button class="odd"><span class="odd-lbl">1</span><span class="odd-val">1.90</span></button>
+            <button class="odd"><span class="odd-lbl">X</span><span class="odd-val">3.50</span></button>
+            <button class="odd"><span class="odd-lbl">2</span><span class="odd-val">3.90</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotions -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title"><span class="title-dot"></span>Promotions</h2>
+        <a href="promotions.html" class="see-all">All promos →</a>
+      </div>
+      <div class="promo-grid">
+        <div class="promo-card promo-purple">
+          <div class="promo-glow"></div>
+          <div class="promo-tag">Welcome Offer</div>
+          <div class="promo-title">200% First<br>Deposit Bonus</div>
+          <div class="promo-desc">200% match on your first deposit up to $1,000. Code: NIRO200</div>
+          <button class="promo-btn">Claim now →</button>
+        </div>
+        <div class="promo-card promo-dark">
+          <div class="promo-glow"></div>
+          <div class="promo-tag">Daily Race</div>
+          <div class="promo-title">$10,000<br>Slot Race</div>
+          <div class="promo-desc">Compete daily. Top 100 players split $10K in prizes.</div>
+          <button class="promo-btn">Join race →</button>
+        </div>
+        <div class="promo-card promo-gold">
+          <div class="promo-glow"></div>
+          <div class="promo-tag">Loyalty</div>
+          <div class="promo-title">VIP Diamond<br>Rewards</div>
+          <div class="promo-desc">Rakeback, personal manager, faster withdrawals and more.</div>
+          <button class="promo-btn">View tiers →</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
